@@ -1,0 +1,44 @@
+.container{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hex-colors h1{
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+}
+
+.hex-colors h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 10% 0;
+    color: rgb(215, 214, 214);
+}
+
+@keyframes changecolor{
+    0%{color: rgb(226, 43, 43);}
+    20%{color: rgb(226, 147, 43);}
+    40%{color: rgb(239, 241, 114);}
+    60%{color: rgb(76, 226, 43);}
+    80%{color: rgb(43, 131, 226);}
+    100%{color: rgb(128, 43, 226);}
+    
+}
+
+@media(max-width:480px){
+    .hex-colors h1{ font-size: 1.5rem;}
+
+    .hex-colors h2{ font-size: 1.5rem;}
+}
+
+
+button:hover{
+    filter: brightness(1.7);
+    
+}
+
